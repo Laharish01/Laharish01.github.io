@@ -28,7 +28,7 @@ a:active {
 .header{
   align-content: center;
   text-align: center;
-  font-size: 20vw;
+  font-size: 5vw;
 }
 
 .intro{
@@ -36,7 +36,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20vw;
+  font-size: 4vw;
 }
 
 .ln-link{
