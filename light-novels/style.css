@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+@font-face{
+  font-family: "wildwords";
+  src: url("../fonts/wild-words.ttf")
+}
+
+.container{
+  font-family: "wildwords";
+  padding: 20px;
+  margin: auto;
+  font-size: 20vw;
+}
+
+.manga-list li{ 
+  margin: 1em;
+}
