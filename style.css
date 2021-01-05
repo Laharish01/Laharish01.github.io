@@ -4,6 +4,7 @@
 }
 a{
   text-decoration: none;
+  text-align: center;
 }
 /* unvisited link */
 a:link {
@@ -12,7 +13,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: rgb(42, 255, 42);
 }
 
 /* mouse over link */
@@ -25,10 +26,15 @@ a:active {
   color: blue;
 }
 
+body{
+  background-image: url('./assets/desktop-bg.jpg');
+}
+
+
 .header{
   align-content: center;
   text-align: center;
-  font-size: 5vw;
+  font-size: x-large;
 }
 
 .intro{
@@ -36,13 +42,15 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: x-large;
+  line-height: 1.5;
 }
 
 .ln-link{
   position: fixed;
   top: 50%;
   left: 50%;
+  text-align: center;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
@@ -87,9 +95,13 @@ a:active {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-/* 
-@media only screen and (max-width: 768px) {
-  .intro {
-    font-size: 20px;
+
+@media screen and (max-width: 600px) {
+  body{
+    background-image: url('./assets/mobile-bg.jpg');
+    color: white;
   }
-} */
+  div.example {
+    font-size: 4vw;
+  }
+}

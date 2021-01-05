@@ -34,9 +34,17 @@ a:active {
   font-family: "wildwords";
   padding: 20px;
   margin: auto;
-  font-size: 5vw;
+  font-size: x-large;
+  line-height: 1.5;
+  
 }
 
 .manga-list li{ 
   margin: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 3vw;
+  }
 }
