@@ -1,107 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
     margin: 0;
     padding: 0;
-}
-a{
-  text-decoration: none;
-  text-align: center;
-}
-/* unvisited link */
-a:link {
-  color: red;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
-/* visited link */
-a:visited {
-  color: rgb(42, 255, 42);
-}
+a{text-decoration: none;text-align: center;}
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
 
 body{
-  background-image: url('./assets/desktop-bg.jpg');
+    background-color:#101214;
+    color: white;
 }
-
 
 .header{
-  align-content: center;
-  text-align: center;
-  font-size: x-large;
+    display: grid;
+    justify-content: center;
 }
-
 .intro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
-  line-height: 1.5;
+    font-size: x-large;
+    padding-top: 10vh;
+    text-align: center;
 }
 
-.ln-link{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+.intro a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.intro a:hover{
+    color:white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.container{
+    display: grid ;
+    grid-template-columns: 50% 50%;
+}
+
+.social{
+    padding: 10vh;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-self: start;
+    
+    line-height: 1.5;
+}
+
+.social a:hover{
+    color:white;
+    font-size: 1.55rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.dev-details{
+    line-height: 1.5;
+    justify-self: start;
+    padding: 10vh;
+    text-align: center;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(168, 0, 0);
+    color: white;
+    text-align: center;
 }
 
 /* Tooltip container */
 .tooltip {
-  margin: 3px;
-  position: relative;
-  display: inline-block;
-  text-decoration: black;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    margin: 3px;
+    position: relative;
+    display: inline-block;
+    text-decoration: black;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  bottom: 100%;
-  left: 50%;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
+    visibility: hidden;
+    width: 200%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+    visibility: visible;
 }
 
 @media screen and (max-width: 600px) {
-  body{
-    background-image: url('./assets/mobile-bg.jpg');
-    color: white;
-  }
-  div.example {
-    font-size: 4vw;
-  }
+    body{
+        background-image: url('./assets/mobile-bg.jpg');
+        font-size: 4vw;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .dev-details{
+        font-size: 4vw;
+    }
+    
+}
+
+
+.icon-mangadex{
+    background: url("./icons/mangadex-32.png") no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: 0 0;
+}
+
+.icon-mal{
+    background: url("./icons/mal-24.png") no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: 0 0;
 }
