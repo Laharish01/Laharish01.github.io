@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    --tc: #111;
+    --bc: #fff;
+    --hc: #384;
+  }
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin:2px;
+    padding: 1px;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font: 18px 'Roboto', sans-serif;
+    line-height: 1.4;
+    color: var(--tc);
+    background: var(--bc);
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 0.7em;
+    text-align: justify;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--hc);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+
+.social{
+    flex:1;
+    padding:15px;
+}
+.social > a {
+    font-size: 2.5vh;
+}
+.dev-details{
+    flex: 1;
+    font-size: 2.5vh;
+    padding: 5px;
+}
+
+/* font stuff */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?ugk0qq');
+    src:  url('fonts/icomoon.eot?ugk0qq#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?ugk0qq') format('truetype'),
+      url('fonts/icomoon.woff?ugk0qq') format('woff'),
+      url('fonts/icomoon.svg?ugk0qq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* icon stuff */
+.icon-github:before{
+    content: "\e905";
+    color: black;
+    font-size: 4vh;
+}
+.icon-linkedin:before {
+    content: "\e906";
+    color: #007ab9;
+    font-size: 4.4vh;
+}
+.icon-twitter .path1:before {
+    content: "\e900";
+    color: #1da1f2;
+  }
+  .icon-twitter .path2:before {
+    content: "\e901";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-discord .path1:before {
+    content: "\e902";
+    color: #8c9eff;
+  }
+  .icon-discord .path2:before {
+    content: "\e903";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-discord .path3:before {
+    content: "\e904";
+    color: #231f20;
+    opacity: 0.1;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path1:before {
+    content: "\e907";
+    color: #f79421;
+  }
+  .icon-mangadex .path2:before {
+    content: "\e908";
+    color: #f79421;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path3:before {
+    content: "\e909";
+    color: #f79421;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path4:before {
+    content: "\e90a";
+    color: #272b30;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path5:before {
+    content: "\e90b";
+    color: #f1f1f1;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path6:before {
+    content: "\e90c";
+    color: #e6e6e6;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path7:before {
+    content: "\e90d";
+    color: #f79421;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path8:before {
+    content: "\e90e";
+    color: #272b30;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path9:before {
+    content: "\e90f";
+    color: #272b30;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path10:before {
+    content: "\e910";
+    color: #272b30;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path11:before {
+    content: "\e911";
+    color: #f27baa;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path12:before {
+    content: "\e912";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mangadex .path13:before {
+    content: "\e913";
+    color: #f79421;
+    margin-left: -1em;
+  }
+.icon-mal:before {
+    content: "\e914";
+    color: #007ab9;
+  }
+
+/* media queries */
+  
+@media (prefers-color-scheme: dark) {
+    * {
+        --tc: #fff;
+        --bc: #111;
+        --hc: #fb0;
+    }
+
+    .icon-github:before{
+        content: "\e905";
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 803px){
+    main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 360px){
+    footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
