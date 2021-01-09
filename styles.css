@@ -33,6 +33,18 @@ body {
     text-align: justify;
 }
 
+body.dark{
+  --tc: #fff;
+  --bc: #111;
+  --hc: #fb0;
+}
+
+body.dark .icon-github::before{
+  content: "\e905";
+  color: white;
+}
+
+
 header{
     width: 100%;
     text-align: center;
@@ -47,20 +59,17 @@ a:hover{
     cursor: pointer;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
 main{
-    display: flex;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
+  display: flex;
 }
 
+footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 .social{
     flex:1;
