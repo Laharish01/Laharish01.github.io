@@ -13,17 +13,19 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: flex;
+    /* display: flex; */
     position: absolute;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     line-height: 1.5;
     --tc: #111;
     --bc: #fff;
     --hc: #384;
     color: var(--tc);
     background: var(--bc);
+    
 }
+
 
 body.dark{
     --tc: #fff;
@@ -33,21 +35,35 @@ body.dark{
 
 a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
 
-.container{
+.big-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
     align-content: center;
     justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image{
     background-color: rgb(4, 4, 139);
     background-image: url("./assets/hero-image-tmp.jpg");
     background-repeat: no-repeat;
-    width: 23rem;
-    height: 23rem;
+    width: 20rem;
+    height: 20rem;
     background-size: cover;
     background-position: center;
-    border-radius: 12rem;
+    border-radius: 3rem;
 }
 
 .btnToggle{
@@ -85,8 +101,15 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
 
 .footer{
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
+/* 
+.footer > p{
+    left: -3rem;
+    position: relative;
+} */
 
 @media only screen and (max-width: 800px){
     .container{
@@ -99,7 +122,21 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
         width: 10rem;
         border-radius: 5rem;
     }
+    .text{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .btnToggle{
+        margin: 0 auto;
+    }
+  
     .footer{
         bottom: 0;
+        margin: 0 auto;
     }
-}
+/* 
+    .footer > p{
+        left: 0;
+    }
+} */
