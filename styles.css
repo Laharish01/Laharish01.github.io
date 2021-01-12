@@ -5,9 +5,7 @@ html{
 *{
     margin: 0;
     padding: 0;
-    --tc: #111;
-    --bc: #fff;
-    --hc: #384;
+    
 }
 
 body{
@@ -20,6 +18,17 @@ body{
     align-items: center;
     justify-content: center;
     line-height: 1.5;
+    --tc: #111;
+    --bc: #fff;
+    --hc: #384;
+    color: var(--tc);
+    background: var(--bc);
+}
+
+body.dark{
+    --tc: #fff;
+    --bc: #111133;
+    --hc: #fb0;
 }
 
 a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
@@ -39,6 +48,33 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
     background-size: cover;
     background-position: center;
     border-radius: 12rem;
+}
+
+.btnToggle{
+    width: 2rem;
+    height: 1rem;
+    background-color: gray;
+    border-radius: 2rem;
+    padding: 2.5px;
+    transition: all 300ms ease-in-out;
+}
+
+.btnToggle > .inner-circle{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2rem;
+    /* padding: 3px; */
+    background-color: white;
+    transition: all 300ms ease-in-out;
+
+}
+
+.btnToggle.active{
+    background: #00acee;
+}
+
+.btnToggle.active > .inner-circle{
+    margin-left:1rem;
 }
 
 .text{
