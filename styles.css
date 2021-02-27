@@ -9,17 +9,6 @@ body{
     overflow: hidden;
     position: absolute;
     line-height: 1.5;
-    --tc: #111;
-    --bc: #fff;
-    --hc: #384;
-    color: var(--tc);
-    background: var(--bc);
-}
-
-body.dark{
-    --tc: #fff;
-    --bc: #111133;
-    --hc: #fb0;
 }
 
 a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
@@ -32,8 +21,17 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
     align-content: center;
     justify-content: center;
     align-items: center;
+    --tc: #fff;
+    --bc: #111133;
+    --hc: #fb0;
+    color: var(--tc);
+    background: var(--bc);
 }
-
+.big-container.light{
+    --tc: #111;
+    --bc: #fff;
+    --hc: #384; 
+}
 .container{
     position: absolute;
     display: flex;
@@ -68,7 +66,7 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
     border-radius: 2rem;
     background-color: white;
     transition: all 300ms ease-in-out;
-    background-image: url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-image: url('https://i.ibb.co/FxzBYR9/night.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,7 +78,7 @@ a{text-decoration: none;color: var(--hc);} a:hover{cursor: pointer;}
 
 .btnToggle.active > .inner-circle{
     margin-left:1rem;
-    background-image: url('https://i.ibb.co/FxzBYR9/night.png');
+    background-image: url('https://i.ibb.co/7JfqXxB/sunny.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
