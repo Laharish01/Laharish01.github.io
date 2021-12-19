@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.videos > video{
+    padding: 2em;
+    flex: 50%;
+    margin-bottom: 10px;
+}
